@@ -90,9 +90,9 @@ contract CryptoDevsDAO is Ownable {
         require(numVotes > 0, "Already Voted");
 
         if (vote == Vote.Yes) {
-            proposal.yesVotes++;
+            proposal.yayVotes += numVotes;
         } else {
-            proposal.noVotes++;
+            proposal.noVotes += numVotes;
         }
     }
 
