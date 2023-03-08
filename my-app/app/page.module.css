@@ -1,24 +1,31 @@
 .main {
   min-height: 90vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Courier New", Courier, monospace;
 }
 
 .footer {
-  display: flex;
+  display: fixed;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
 }
 
+.descriptionInfo {
+  border: 1px solid;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
 .image {
-  width: 70%;
-  height: 50%;
-  margin-left: 20%;
+  width: 30%;
+  height: 30%;
+  margin-left: 35%;
+  margin-bottom: 1rem;
 }
 
 .title {
@@ -27,9 +34,9 @@
 }
 
 .description {
-  line-height: 1;
+  line-height: 0.7;
   margin: 2rem 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .button {
@@ -43,6 +50,12 @@
   cursor: pointer;
   margin-right: 2%;
   margin-bottom: 2%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .button2 {
@@ -63,15 +76,34 @@
   border: black 2px solid;
   flex: 1;
   flex-direction: column;
+  padding: 0.5rem;
 }
 
 .container {
   margin-top: 2rem;
 }
 
+.containerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.proposalContainer {
+  max-width: 800px;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .flex {
+  display: flex;
   flex: 1;
   justify-content: space-between;
+  flex-direction: row;
 }
 
 @media (max-width: 1000px) {
